@@ -1,0 +1,61 @@
+@startuml
+class game.Game {
+- Actor player
++ String openObWithSomething(NounPhrase,NounPhrase)
++ String lockObWithSomething(NounPhrase,NounPhrase)
++ String unlockObWithSomething(NounPhrase,NounPhrase)
++ String putObInContainer(NounPhrase,NounPhrase)
++ String openOb(NounPhrase)
++ String closeOb(NounPhrase)
++ String lockOb(NounPhrase)
++ String unlockOb(NounPhrase)
+~ String takeOb(NounPhrase)
+~ String dropOb(NounPhrase)
+~ void movePlayerTo(Dir)
+~ void goN()
+~ void goS()
+~ void goW()
+~ void goE()
+~ void goUp()
+~ void goDown()
+~ void look()
+~ void showStr(String)
+~ void showInventory()
+~ String lookAtOb(NounPhrase)
+~ String lookInOb(NounPhrase)
++ void showIntro()
++ String runCommand(String)
+~ void showTest(String)
+~ void showMass(int)
+~ void test()
+}
+class game.Parser {
+- {static} String last_input
+~ {static} String processVerbNounPhrasePrepositionNounPhrase(List<GrammarUnit>)
+~ {static} String processVerbPrepositionNounPhrase(List<GrammarUnit>)
+~ {static} String processVerbNounPhrase(List<GrammarUnit>)
+~ {static} String processVerb(List<GrammarUnit>)
+~ {static} String processCommand(List<WordAndType>)
+~ {static} List<WordAndType> parseCommand(List<String>)
+- {static} String parseErrors(List<WordAndType>)
+~ {static} List<String> wordList(String)
+~ {static} String runCommand(String)
+}
+class game.Starcrash {
+~ {static} Game game
+~ {static} BufferedReader in
+~ {static} String file_ext
++ {static} String getInput()
++ {static} boolean overwriteFile(String)
++ {static} boolean fileExists(String)
++ {static} String getFileExtension(String)
+- {static} String getFileName()
+- {static} void saveGame()
+- {static} void loadGame()
++ {static} void main(String[])
+}
+
+
+game.Serializable <|.. game.Game
+game.Serializable <|.. game.Parser
+@enduml

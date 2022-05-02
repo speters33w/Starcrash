@@ -1,0 +1,19 @@
+@startuml
+class game.data.GameData {
++ {static} ArrayList<Room> map
++ {static} HashMap<String,Thing> things
++ {static} Actor player
+- {static} String introtext
++ {static} void initGame()
+- {static} void defineIntroText()
++ {static} String introText()
+}
+class game.data.VocabularyData {
++ {static} HashMap<String,WT> vocab
++ {static} void initVocab()
+}
+
+
+game.data.Serializable <|.. game.data.GameData
+game.data.Serializable <|.. game.data.VocabularyData
+@enduml

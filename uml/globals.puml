@@ -1,0 +1,45 @@
+@startuml
+enum globals.Dir {
++  NORTH
++  SOUTH
++  EAST
++  WEST
++  UP
++  DOWN
++ {static} Room NOEXIT
+}
+enum globals.WT {
++  NOUN
++  VERB
++  ADJECTIVE
++  CONJUNCTION
++  ARTICLE
++  PREPOSITION
++  UNKNOWN
++  ERROR
+}
+enum globals.Mass {
++ {static} int UNKNOWN
++ {static} int TINY
++ {static} int SMALL
++ {static} int MEDIUM
++ {static} int BIG
++ {static} int HUGE
+}
+class globals.Debug {
++ {static} boolean ON
++ {static} boolean FULL
+}
+class globals.ThingAndThingHolder {
+- Thing t
+- ThingHolder th
++ Thing getThing()
++ void setThing(Thing)
++ ThingHolder getThingHolder()
++ void setThingHolder(ThingHolder)
++ ThingList getList()
+}
+
+
+globals.Serializable <|.. globals.ThingAndThingHolder
+@enduml

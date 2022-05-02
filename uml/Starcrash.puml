@@ -1,0 +1,357 @@
+@startuml
+class game.Game {
+- Actor player
++ String openObWithSomething(NounPhrase,NounPhrase)
++ String lockObWithSomething(NounPhrase,NounPhrase)
++ String unlockObWithSomething(NounPhrase,NounPhrase)
++ String putObInContainer(NounPhrase,NounPhrase)
++ String openOb(NounPhrase)
++ String closeOb(NounPhrase)
++ String lockOb(NounPhrase)
++ String unlockOb(NounPhrase)
+~ String takeOb(NounPhrase)
+~ String dropOb(NounPhrase)
+~ void movePlayerTo(Dir)
+~ void goN()
+~ void goS()
+~ void goW()
+~ void goE()
+~ void goUp()
+~ void goDown()
+~ void look()
+~ void showStr(String)
+~ void showInventory()
+~ String lookAtOb(NounPhrase)
+~ String lookInOb(NounPhrase)
++ void showIntro()
++ String runCommand(String)
+~ void showTest(String)
+~ void showMass(int)
+~ void test()
+}
+class gameobjects.Thing {
+- String long_description
+- boolean takable
+- boolean movable
+- boolean show
+- ArrayList<String> adjectives
+- int mass
+- ThingHolder container
+- void testMass()
+# String article(String)
++ ArrayList getAdjectives()
++ void setAdjectives(ArrayList)
++ void addAdjectives(String[])
++ int getMass()
++ int totalMass()
++ boolean isTakable()
++ void setTakable(boolean)
++ boolean isMovable()
++ void setMovable(boolean)
++ ThingHolder getContainer()
++ void setContainer(ThingHolder)
++ boolean show()
++ void setShow(boolean)
++ String open()
++ String close()
++ String describe()
++ String getLongDescription()
++ void setLongDescription(String)
+- boolean adjectivesMatch(ArrayList<String>)
++ boolean matchThing(NounPhrase)
+- boolean isInside(ContainerThing)
++ boolean isIn(Thing)
+}
+class gameobjects.IncorrectMassException {
+}
+class game.grammar.GrammarError {
+}
+class gameobjects.special.Actions {
++ {static} String putIntoSpecial(Thing,ThingHolder,ContainerThing)
++ {static} String dropSpecial(Thing,ThingHolder,Room,int)
++ {static} String takeSpecial(Thing,ThingHolder,Room,int)
+}
+class gameobjects.LockableThing {
+- boolean locked
+- Thing thingToUnlockWith
++ void canBeUnlockedWith(Thing)
++ String trytounlockWith(Thing)
++ String trytolockWith(Thing)
++ String open()
+}
+class game.grammar.WordAndType {
+- String word
+- WT wordtype
++ String getWord()
++ void setWord(String)
++ WT getWordtype()
++ void setWordtype(WT)
+}
+class gameobjects.GameThing {
+}
+class game.data.GameData {
++ {static} ArrayList<Room> map
++ {static} HashMap<String,Thing> things
++ {static} Actor player
+- {static} String introtext
++ {static} void initGame()
+- {static} void defineIntroText()
++ {static} String introText()
+}
+class gameobjects.lists.ThingAndThingHolderList {
++ boolean isNullOrEmpty()
+}
+class game.grammar.Verb {
+}
+class gameobjects.lists.tools.ListTool {
+- {static} String listMultipleThings(ArrayList<ThingAndThingHolder>)
++ {static} String oneThingAndOneContainerInLists(ThingAndThingHolderList,ThingAndThingHolderList,String,String,String,String)
++ {static} String oneThingInList(ThingAndThingHolderList,String,String,boolean)
++ {static} String oneThingInList(ThingAndThingHolderList,String,String)
+}
+class gameobjects.Actor {
+~ int MAXLOAD
+- int load
++ void setLocation(Room)
++ Room getLocation()
++ String describeLocation(boolean)
++ String inventory()
++ ThingAndThingHolderList matchingThingsHere(NounPhrase)
++ ThingAndThingHolderList matchingThingsInInventory(NounPhrase)
++ ThingAndThingHolderList matchingThingsInRoom(NounPhrase)
++ int getLoad()
++ void setLoad(int)
++ String openWith(NounPhrase,NounPhrase)
++ String lockWith(NounPhrase,NounPhrase)
++ String unlockWith(NounPhrase,NounPhrase)
++ String lockOb(NounPhrase)
++ String unlockOb(NounPhrase)
++ String openOb(NounPhrase)
++ String closeOb(NounPhrase)
++ String lookIn(NounPhrase)
++ String lookAt(NounPhrase)
+- void doPutInto(Thing,ThingHolder,ContainerThing)
+- String putInto_SanityCheck(Thing,ContainerThing,String,String)
++ String putInto(NounPhrase,NounPhrase)
+- String debugTakeDrop(Thing,int,boolean)
+- String doTake(Thing,ThingHolder)
++ String take(NounPhrase)
++ String drop(NounPhrase)
++ boolean moveTo(Dir)
+}
+class globals.Debug {
++ {static} boolean ON
++ {static} boolean FULL
+}
+class game.grammar.Preposition {
+}
+class game.grammar.GrammarUnit {
+- String word
++ String getWord()
+}
+class gameobjects.lists.ThingList {
+- String name
++ String getName()
++ void setName(String)
+}
+class gameobjects.Room {
+- Room n
++ void init(String,Room,Room,Room,Room,Room,Room)
++ void init(String,Room,Room,Room,Room)
++ Room getN()
++ void setN(Room)
++ Room getS()
++ void setS(Room)
++ Room getE()
++ void setE(Room)
++ Room getW()
++ void setW(Room)
++ Room getUp()
++ void setUp(Room)
++ Room getDown()
++ void setDown(Room)
++ String describe(boolean)
+}
+enum globals.WT {
++  NOUN
++  VERB
++  ADJECTIVE
++  CONJUNCTION
++  ARTICLE
++  PREPOSITION
++  UNKNOWN
++  ERROR
+}
+class gameobjects.GenericThing {
+- boolean plural
++ boolean isPlural()
+# String article(String)
++ String describe()
+}
+enum globals.Mass {
++ {static} int UNKNOWN
++ {static} int TINY
++ {static} int SMALL
++ {static} int MEDIUM
++ {static} int BIG
++ {static} int HUGE
+}
+class game.Parser {
+- {static} String last_input
+~ {static} String processVerbNounPhrasePrepositionNounPhrase(List<GrammarUnit>)
+~ {static} String processVerbPrepositionNounPhrase(List<GrammarUnit>)
+~ {static} String processVerbNounPhrase(List<GrammarUnit>)
+~ {static} String processVerb(List<GrammarUnit>)
+~ {static} String processCommand(List<WordAndType>)
+~ {static} List<WordAndType> parseCommand(List<String>)
+- {static} String parseErrors(List<WordAndType>)
+~ {static} List<String> wordList(String)
+~ {static} String runCommand(String)
+}
+class game.Starcrash {
+~ {static} Game game
+~ {static} BufferedReader in
+~ {static} String file_ext
++ {static} String getInput()
++ {static} boolean overwriteFile(String)
++ {static} boolean fileExists(String)
++ {static} String getFileExtension(String)
+- {static} String getFileName()
+- {static} void saveGame()
+- {static} void loadGame()
++ {static} void main(String[])
+}
+class game.grammar.SentenceAnalyzer {
+- List<GrammarUnit> sentence
+- List<WordAndType> rest
+- String error
+- WordAndType getNextElement()
+- ArrayList<String> getAdjectives(WordAndType)
++ String getError()
++ boolean containsError()
+- String getNoun(WordAndType)
+- void addNounPhrase(WordAndType)
+- void addError(String)
+- void addPreposition(WordAndType)
+- void addVerb(WordAndType)
++ List<GrammarUnit> analyze()
+}
+class game.grammar.NounPhrase {
+- ArrayList<String> adjectives
++ ArrayList<String> getAdjectives()
++ void setAdjectives(ArrayList<String>)
++ String phrase()
+}
+enum globals.Dir {
++  NORTH
++  SOUTH
++  EAST
++  WEST
++  UP
++  DOWN
++ {static} Room NOEXIT
+}
+class gameobjects.BaseThing {
+- String name
+- String description
++ String getName()
++ void setName(String)
++ String getDescription()
++ void setDescription(String)
+}
+class game.data.VocabularyData {
++ {static} HashMap<String,WT> vocab
++ {static} void initVocab()
+}
+class gameobjects.ContainerThing {
+- boolean openable
+- boolean isopen
+- int container_volume
++ boolean isOpenable()
++ void setOpenable(boolean)
++ boolean isOpen()
++ void setOpen(boolean)
++ String open()
++ String close()
++ String describe()
++ int contentsMass()
++ int totalMass()
++ int volume()
++ void setVolume(int)
+}
+class gameobjects.ThingHolder {
+- ThingList things
+- ThingAndThingHolder t_and_th
+- ThingAndThingHolderList thingsfound
+- String thingStr
+~ ThingList flatlist
++ ArrayList<ThingAndThingHolder> getThingsfound()
++ {static} ContainerThing toContainerThing(Thing)
++ int numberOfThings()
+- ThingList thingsToFlatList(ThingHolder)
++ ThingList flatten()
+- void findThingInAnyList(ThingHolder,NounPhrase)
+- void doDescribeThings(ThingHolder,boolean)
++ String describeThings()
++ String describeTopLevelThings()
++ boolean containsThing(Thing,boolean)
+- boolean containsThingInNestedLists(Thing)
++ ThingAndThingHolderList findThings(NounPhrase)
++ boolean inTopLevelList(Thing)
++ ThingList getThings()
++ void setThings(ThingList)
++ void remove(Thing)
++ void addThing(Thing)
+- void add(Thing)
+# void transferOb(Thing,ThingHolder,ThingHolder)
+}
+class globals.ThingAndThingHolder {
+- Thing t
+- ThingHolder th
++ Thing getThing()
++ void setThing(Thing)
++ ThingHolder getThingHolder()
++ void setThingHolder(ThingHolder)
++ ThingList getList()
+}
+
+
+game.Serializable <|.. game.Game
+gameobjects.Serializable <|.. gameobjects.Thing
+gameobjects.BaseThing <|-- gameobjects.Thing
+gameobjects.RuntimeException <|-- gameobjects.IncorrectMassException
+game.grammar.Serializable <|.. game.grammar.GrammarError
+game.grammar.GrammarUnit <|-- game.grammar.GrammarError
+gameobjects.Serializable <|.. gameobjects.LockableThing
+gameobjects.ContainerThing <|-- gameobjects.LockableThing
+game.grammar.Serializable <|.. game.grammar.WordAndType
+gameobjects.Serializable <|.. gameobjects.GameThing
+gameobjects.Thing <|-- gameobjects.GameThing
+game.data.Serializable <|.. game.data.GameData
+gameobjects.lists.Serializable <|.. gameobjects.lists.ThingAndThingHolderList
+java.util.ArrayList <|-- gameobjects.lists.ThingAndThingHolderList
+game.grammar.Serializable <|.. game.grammar.Verb
+game.grammar.GrammarUnit <|-- game.grammar.Verb
+gameobjects.Serializable <|.. gameobjects.Actor
+gameobjects.ThingHolder <|-- gameobjects.Actor
+game.grammar.Serializable <|.. game.grammar.Preposition
+game.grammar.GrammarUnit <|-- game.grammar.Preposition
+game.grammar.Serializable <|.. game.grammar.GrammarUnit
+gameobjects.lists.Serializable <|.. gameobjects.lists.ThingList
+java.util.ArrayList <|-- gameobjects.lists.ThingList
+gameobjects.Serializable <|.. gameobjects.Room
+gameobjects.ThingHolder <|-- gameobjects.Room
+gameobjects.Serializable <|.. gameobjects.GenericThing
+gameobjects.Thing <|-- gameobjects.GenericThing
+game.Serializable <|.. game.Parser
+game.grammar.Serializable <|.. game.grammar.SentenceAnalyzer
+game.grammar.Serializable <|.. game.grammar.NounPhrase
+game.grammar.GrammarUnit <|-- game.grammar.NounPhrase
+gameobjects.Serializable <|.. gameobjects.BaseThing
+game.data.Serializable <|.. game.data.VocabularyData
+gameobjects.Serializable <|.. gameobjects.ContainerThing
+gameobjects.ThingHolder <|-- gameobjects.ContainerThing
+gameobjects.Serializable <|.. gameobjects.ThingHolder
+gameobjects.Thing <|-- gameobjects.ThingHolder
+globals.Serializable <|.. globals.ThingAndThingHolder
+@enduml

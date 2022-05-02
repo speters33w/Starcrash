@@ -1,0 +1,194 @@
+@startuml
+class gameobjects.Room {
+- Room n
++ void init(String,Room,Room,Room,Room,Room,Room)
++ void init(String,Room,Room,Room,Room)
++ Room getN()
++ void setN(Room)
++ Room getS()
++ void setS(Room)
++ Room getE()
++ void setE(Room)
++ Room getW()
++ void setW(Room)
++ Room getUp()
++ void setUp(Room)
++ Room getDown()
++ void setDown(Room)
++ String describe(boolean)
+}
+class gameobjects.Thing {
+- String long_description
+- boolean takable
+- boolean movable
+- boolean show
+- ArrayList<String> adjectives
+- int mass
+- ThingHolder container
+- void testMass()
+# String article(String)
++ ArrayList getAdjectives()
++ void setAdjectives(ArrayList)
++ void addAdjectives(String[])
++ int getMass()
++ int totalMass()
++ boolean isTakable()
++ void setTakable(boolean)
++ boolean isMovable()
++ void setMovable(boolean)
++ ThingHolder getContainer()
++ void setContainer(ThingHolder)
++ boolean show()
++ void setShow(boolean)
++ String open()
++ String close()
++ String describe()
++ String getLongDescription()
++ void setLongDescription(String)
+- boolean adjectivesMatch(ArrayList<String>)
++ boolean matchThing(NounPhrase)
+- boolean isInside(ContainerThing)
++ boolean isIn(Thing)
+}
+class gameobjects.IncorrectMassException {
+}
+class gameobjects.GenericThing {
+- boolean plural
++ boolean isPlural()
+# String article(String)
++ String describe()
+}
+class gameobjects.special.Actions {
++ {static} String putIntoSpecial(Thing,ThingHolder,ContainerThing)
++ {static} String dropSpecial(Thing,ThingHolder,Room,int)
++ {static} String takeSpecial(Thing,ThingHolder,Room,int)
+}
+class gameobjects.LockableThing {
+- boolean locked
+- Thing thingToUnlockWith
++ void canBeUnlockedWith(Thing)
++ String trytounlockWith(Thing)
++ String trytolockWith(Thing)
++ String open()
+}
+class gameobjects.GameThing {
+}
+class gameobjects.lists.ThingAndThingHolderList {
++ boolean isNullOrEmpty()
+}
+class gameobjects.lists.tools.ListTool {
+- {static} String listMultipleThings(ArrayList<ThingAndThingHolder>)
++ {static} String oneThingAndOneContainerInLists(ThingAndThingHolderList,ThingAndThingHolderList,String,String,String,String)
++ {static} String oneThingInList(ThingAndThingHolderList,String,String,boolean)
++ {static} String oneThingInList(ThingAndThingHolderList,String,String)
+}
+class gameobjects.Actor {
+~ int MAXLOAD
+- int load
++ void setLocation(Room)
++ Room getLocation()
++ String describeLocation(boolean)
++ String inventory()
++ ThingAndThingHolderList matchingThingsHere(NounPhrase)
++ ThingAndThingHolderList matchingThingsInInventory(NounPhrase)
++ ThingAndThingHolderList matchingThingsInRoom(NounPhrase)
++ int getLoad()
++ void setLoad(int)
++ String openWith(NounPhrase,NounPhrase)
++ String lockWith(NounPhrase,NounPhrase)
++ String unlockWith(NounPhrase,NounPhrase)
++ String lockOb(NounPhrase)
++ String unlockOb(NounPhrase)
++ String openOb(NounPhrase)
++ String closeOb(NounPhrase)
++ String lookIn(NounPhrase)
++ String lookAt(NounPhrase)
+- void doPutInto(Thing,ThingHolder,ContainerThing)
+- String putInto_SanityCheck(Thing,ContainerThing,String,String)
++ String putInto(NounPhrase,NounPhrase)
+- String debugTakeDrop(Thing,int,boolean)
+- String doTake(Thing,ThingHolder)
++ String take(NounPhrase)
++ String drop(NounPhrase)
++ boolean moveTo(Dir)
+}
+class gameobjects.BaseThing {
+- String name
+- String description
++ String getName()
++ void setName(String)
++ String getDescription()
++ void setDescription(String)
+}
+class gameobjects.ContainerThing {
+- boolean openable
+- boolean isopen
+- int container_volume
++ boolean isOpenable()
++ void setOpenable(boolean)
++ boolean isOpen()
++ void setOpen(boolean)
++ String open()
++ String close()
++ String describe()
++ int contentsMass()
++ int totalMass()
++ int volume()
++ void setVolume(int)
+}
+class gameobjects.ThingHolder {
+- ThingList things
+- ThingAndThingHolder t_and_th
+- ThingAndThingHolderList thingsfound
+- String thingStr
+~ ThingList flatlist
++ ArrayList<ThingAndThingHolder> getThingsfound()
++ {static} ContainerThing toContainerThing(Thing)
++ int numberOfThings()
+- ThingList thingsToFlatList(ThingHolder)
++ ThingList flatten()
+- void findThingInAnyList(ThingHolder,NounPhrase)
+- void doDescribeThings(ThingHolder,boolean)
++ String describeThings()
++ String describeTopLevelThings()
++ boolean containsThing(Thing,boolean)
+- boolean containsThingInNestedLists(Thing)
++ ThingAndThingHolderList findThings(NounPhrase)
++ boolean inTopLevelList(Thing)
++ ThingList getThings()
++ void setThings(ThingList)
++ void remove(Thing)
++ void addThing(Thing)
+- void add(Thing)
+# void transferOb(Thing,ThingHolder,ThingHolder)
+}
+class gameobjects.lists.ThingList {
+- String name
++ String getName()
++ void setName(String)
+}
+
+
+gameobjects.Serializable <|.. gameobjects.Room
+gameobjects.ThingHolder <|-- gameobjects.Room
+gameobjects.Serializable <|.. gameobjects.Thing
+gameobjects.BaseThing <|-- gameobjects.Thing
+gameobjects.RuntimeException <|-- gameobjects.IncorrectMassException
+gameobjects.Serializable <|.. gameobjects.GenericThing
+gameobjects.Thing <|-- gameobjects.GenericThing
+gameobjects.Serializable <|.. gameobjects.LockableThing
+gameobjects.ContainerThing <|-- gameobjects.LockableThing
+gameobjects.Serializable <|.. gameobjects.GameThing
+gameobjects.Thing <|-- gameobjects.GameThing
+gameobjects.lists.Serializable <|.. gameobjects.lists.ThingAndThingHolderList
+java.util.ArrayList <|-- gameobjects.lists.ThingAndThingHolderList
+gameobjects.Serializable <|.. gameobjects.Actor
+gameobjects.ThingHolder <|-- gameobjects.Actor
+gameobjects.Serializable <|.. gameobjects.BaseThing
+gameobjects.Serializable <|.. gameobjects.ContainerThing
+gameobjects.ThingHolder <|-- gameobjects.ContainerThing
+gameobjects.Serializable <|.. gameobjects.ThingHolder
+gameobjects.Thing <|-- gameobjects.ThingHolder
+gameobjects.lists.Serializable <|.. gameobjects.lists.ThingList
+java.util.ArrayList <|-- gameobjects.lists.ThingList
+@enduml

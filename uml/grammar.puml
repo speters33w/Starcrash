@@ -1,0 +1,54 @@
+@startuml
+class game.grammar.GrammarError {
+}
+class game.grammar.Verb {
+}
+class game.grammar.SentenceAnalyzer {
+- List<GrammarUnit> sentence
+- List<WordAndType> rest
+- String error
+- WordAndType getNextElement()
+- ArrayList<String> getAdjectives(WordAndType)
++ String getError()
++ boolean containsError()
+- String getNoun(WordAndType)
+- void addNounPhrase(WordAndType)
+- void addError(String)
+- void addPreposition(WordAndType)
+- void addVerb(WordAndType)
++ List<GrammarUnit> analyze()
+}
+class game.grammar.Preposition {
+}
+class game.grammar.NounPhrase {
+- ArrayList<String> adjectives
++ ArrayList<String> getAdjectives()
++ void setAdjectives(ArrayList<String>)
++ String phrase()
+}
+class game.grammar.GrammarUnit {
+- String word
++ String getWord()
+}
+class game.grammar.WordAndType {
+- String word
+- WT wordtype
++ String getWord()
++ void setWord(String)
++ WT getWordtype()
++ void setWordtype(WT)
+}
+
+
+game.grammar.Serializable <|.. game.grammar.GrammarError
+game.grammar.GrammarUnit <|-- game.grammar.GrammarError
+game.grammar.Serializable <|.. game.grammar.Verb
+game.grammar.GrammarUnit <|-- game.grammar.Verb
+game.grammar.Serializable <|.. game.grammar.SentenceAnalyzer
+game.grammar.Serializable <|.. game.grammar.Preposition
+game.grammar.GrammarUnit <|-- game.grammar.Preposition
+game.grammar.Serializable <|.. game.grammar.NounPhrase
+game.grammar.GrammarUnit <|-- game.grammar.NounPhrase
+game.grammar.Serializable <|.. game.grammar.GrammarUnit
+game.grammar.Serializable <|.. game.grammar.WordAndType
+@enduml
