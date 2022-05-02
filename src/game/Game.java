@@ -142,12 +142,13 @@ public class Game implements java.io.Serializable {
         String s;
         String lowstr;
 
-        s = "ok";
+        s = "OK, I'm sure you have better things to do with your time.\n"
+                + "I'm not sure what, but whatever.";
         lowstr = inputstr.trim().toLowerCase();
 
-        if (!lowstr.equals("q")) {
+        if (!lowstr.equals("q") && !lowstr.equals("quit")) {
             if (lowstr.equals("")) {
-                s = "You must enter a command";
+                s = "All I heard was nothingness. Cat got your keyboard?";
             } else {
                 s = Parser.runCommand(inputstr);
             }

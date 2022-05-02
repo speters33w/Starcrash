@@ -128,11 +128,11 @@ public class Thing extends BaseThing implements java.io.Serializable {
     }
 
     public String open() {
-        return "Cannot open " + getDescription() + " because it isn't a container.";
+        return "Cannot open " + getDescription() + " because it isn't a container.\n";
     }
 
     public String close() {
-        return "Cannot close " + getDescription() + " because it isn't a container.";
+        return "Cannot close " + getDescription() + " because it isn't a container.\n";
     }
 
     public String describe() {
@@ -152,7 +152,7 @@ public class Thing extends BaseThing implements java.io.Serializable {
     }
 
     public void setLongDescription(String long_description) {
-        this.long_description = long_description;
+        this.long_description = long_description + "\n";
     }
 
     private boolean adjectivesMatch(ArrayList<String> someAdjectives) {

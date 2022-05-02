@@ -1,6 +1,6 @@
 # Starcrash
 
-Improvements to the [BIFF](http://bitwisebooks.com/program-adventure-games-with-the-biff-framework/) (*Bitwise Interactive Fiction Framework*) by  [Huw Collingbourne](http://bitwisebooks.com/author/huw/).
+Improvements (hopefully) to the [BIFF](http://bitwisebooks.com/program-adventure-games-with-the-biff-framework/) (*Bitwise Interactive Fiction Framework*) by  [Huw Collingbourne](http://bitwisebooks.com/author/huw/).
 
 I am using his book [The Little Book of Adventure Game Programming](http://bitwisebooks.com/little-book-of-adventure-game-programming-in-java/), to learn Java programming concepts.
 
@@ -34,6 +34,36 @@ It is displaying this message:
 Place activation card into slot to engage faster-than-light drive.
 quit
 quit (not implemented)
+q
+ok
+```
+
+...And here is the start of a great adventure to examine...
+
+```
+You find yourself on the bridge of the HMS Starcrash,
+an elite-class starship of Her Majesty's Royal Fleet.
+What do you want to do?
+(Enter q to quit)
+look
+This is an ultra-modern starship bridge.
+A huge viewscreen dominating one wall shows space in this quadrant.
+There is a console on a desk with a slot beneath it.
+x console
+It is a display console built into the desk.
+It is displaying this message:
+Place activation card into slot to engage faster-than-light drive.
+examine console
+It is a display console built into the desk.
+It is displaying this message:
+Place activation card into slot to engage faster-than-light drive.
+look at console
+It is a display console built into the desk.
+It is displaying this message:
+Place activation card into slot to engage faster-than-light drive.
+examine
+examine what?
+OK, on further examination you find you aren't examining anything.
 q
 ok
 ```

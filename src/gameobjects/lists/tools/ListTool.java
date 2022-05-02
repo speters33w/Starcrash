@@ -69,7 +69,8 @@ public class ListTool {
             if (mustBeInInventory) {
                 s = "You haven't got " + thingDesc;
             } else {
-                s = "Can't see " + thingDesc + " here.";
+                s = "Ether there isn't a " + thingDesc
+                        + " here, or the nutter at the rudder didn't program for you to look at this.";
             }
         } else if (things.size() > 1) {
             s = "Which of these do you want to " + verb + "?\n";

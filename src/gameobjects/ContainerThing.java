@@ -66,13 +66,13 @@ public class ContainerThing extends ThingHolder implements java.io.Serializable 
         String s;
 
         if (!openable) {
-            s = "Can't open the " + getDescription();
+            s = "Can't open the " + getDescription() + "\n";
         } else {
             if (isopen) {
-                s = "The " + getDescription() + " is already open.";
+                s = "The " + getDescription() + " is already open.\n";
             } else {
                 isopen = true;
-                s = "You open the " + getDescription();
+                s = "You open the " + getDescription() + "\n";
             }
         }
         return s;
@@ -83,13 +83,13 @@ public class ContainerThing extends ThingHolder implements java.io.Serializable 
         String s;
 
         if (!openable) {
-            s = "Can't close the " + getDescription();
+            s = "Can't close the " + getDescription() + "\n";
         } else {
             if (isopen) {
                 isopen = false;
-                s = "You close the " + getDescription();
+                s = "You close the " + getDescription()+ "\n";
             } else {
-                s = "The " + getDescription() + " is already closed.";
+                s = "The " + getDescription() + " is already closed.\n";
             }
         }
         return s;
@@ -109,7 +109,7 @@ public class ContainerThing extends ThingHolder implements java.io.Serializable 
         }
         if (isopen) {
             if (getThings().size() > 0) {
-                s += "\nThere is something in it.";
+                s += "\nThere is something in it.\n";
             }
         }
         return s;

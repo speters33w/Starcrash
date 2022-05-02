@@ -65,6 +65,10 @@ public class Parser implements java.io.Serializable {
             switch (verb_word + preposition_word) {
                 case "putin":
                 case "putinto":
+                case "putinside":
+                case "placein":
+                case "placeinto":
+                case "placeinside":
                     msg = game.putObInContainer(np, np2);
                     break;
                 case "openwith":
@@ -117,6 +121,7 @@ public class Parser implements java.io.Serializable {
                     break;
                 case "lookin":
                 case "lookinto":
+                case "lookinside":
                     msg = Starcrash.game.lookInOb(np);
                     break;
                 default:
@@ -164,6 +169,9 @@ public class Parser implements java.io.Serializable {
                 case "x":
                 case "examine":
                     msg = Starcrash.game.lookAtOb(np);
+                    break;
+                case "engage":
+                    msg = "OK, Jean-Luc. We'll " + verb_word + ". Really?"; //todo this doesn't work.
                     break;
                 case "lock":
                     msg = game.lockOb(np);
@@ -219,6 +227,9 @@ public class Parser implements java.io.Serializable {
                 case "examine":
                     msg = word + " what?\n"
                         +"OK, on further examination you find you aren't examining anything.";
+                    break;
+                case "exits":
+                    msg = "How exciting"; //todo program for exits command
                     break;
                 case "l":
                 case "look":
@@ -302,7 +313,7 @@ public class Parser implements java.io.Serializable {
 
         for (WordAndType wt : command) {
             if (wt.getWordtype() == WT.ERROR) {
-                s += wt.getWord() + " not understood\n";
+                s += wt.getWord() + " isn't a word any reasonable person would understand.\n";
             }
         }
         return s;
@@ -332,7 +343,7 @@ public class Parser implements java.io.Serializable {
 
         s = "ok";
         lowstr = input.trim().toLowerCase();
-        if (!lowstr.equals("q")) {
+        if (!lowstr.equals("q") && !lowstr.equals("quit")) {
             if (lowstr.equals("")) {
                 s = "You must enter a command";
             } else {
@@ -343,7 +354,7 @@ public class Parser implements java.io.Serializable {
                 if (s.isEmpty()) {
                     s = processCommand(command);
                 } else {
-                    s = "Invalid command '" + input + "'\n" + s;
+                    s = "I have no idea what you are trying to say here: '" + input + ",' LOL!\n" + s;
                 }
             }
         }

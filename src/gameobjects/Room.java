@@ -110,7 +110,7 @@ public class Room extends ThingHolder implements java.io.Serializable {
         }
         thingsdesc = describeTopLevelThings(); // don't describe things in other things
         if (!thingsdesc.isEmpty()) {
-            roomdesc += "\nThings here:\n" + thingsdesc;
+            roomdesc += "\nYou see a:\n" + thingsdesc;
         }
         return roomdesc;
     }

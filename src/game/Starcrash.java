@@ -160,7 +160,7 @@ public class Starcrash {
             if (!output.trim().isEmpty()) {
                 game.showStr(output);
             }
-        } while (!"q".equals(input));
+        } while (!"q".equals(input) && !"quit".equals(input) );
     }
 
 }

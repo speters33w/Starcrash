@@ -102,13 +102,14 @@ public class GameData implements java.io.Serializable {
         GameThing desk = new GameThing("desk", "metal control desk", Mass.BIG, false, false);
         desk.addAdjectives(new String[]{"metal", "control"});
         desk.setLongDescription("metal control desk. There is a console built into the desk.\n"
-                + "There is a small slot beneath the console");
+                              + "There is a small slot beneath the console\n");
         desk.setShow(false);
 
         GameThing console = new GameThing("console", "display console", Mass.MEDIUM, false, false);
         console.addAdjectives(new String[]{"display"});
-        console.setLongDescription("display console built into the desk.\nIt is displaying this message:\n"
-                + "Place activation card into slot to engage faster-than-light drive");
+        console.setLongDescription("display console built into the desk.\n"
+                                 + "It is displaying this message:\n"
+                                 + "\"Place activation card into slot to engage faster-than-light drive.\"");
         console.setShow(false);
 
         GameThing goldKey = new GameThing("key", "gold key", Mass.TINY);
@@ -188,14 +189,15 @@ public class GameData implements java.io.Serializable {
         // and adding the pre-created lists (which may contain objects or may be empty)
         //           N,        S,           W,         E,       [Up],      [Down])
         // readyRoom
-        readyRoom.init("a small but neat room. There is a cupboard on the wall",
+        readyRoom.init("a small but neat room. \n"
+                                  + "There is a cupboard on the wall\n",
                 Dir.NOEXIT, Dir.NOEXIT, Dir.NOEXIT, bridge);
         // bridge
-        bridge.init("the bridge of the HMS Starcrash. A huge viewscreen dominates one wall",
+        bridge.init("the bridge of the HMS Starcrash. A huge viewscreen dominates one wall\n",
                 Dir.NOEXIT, Dir.NOEXIT, readyRoom, Dir.NOEXIT, Dir.NOEXIT, meetingRoom);
         bridge.setLongDescription("an ultra-modern starship bridge.\n" +   
                 "A huge viewscreen dominating one wall shows space in this quadrant.\n"
-                + "There is a console on a desk with a slot beneath it");
+                + "There is a console on a desk with a slot beneath it.");
         // meetingRoom
         meetingRoom.init("typical boring-looking meeting room",
                 Dir.NOEXIT, Dir.NOEXIT, Dir.NOEXIT, corridor, bridge, engineRoom
@@ -233,7 +235,9 @@ public class GameData implements java.io.Serializable {
                 hydroponicsCentral, greenhouse, hydroponicsCentral, Dir.NOEXIT
         );
         // greenhouse
-        greenhouse.init("huge glass structure filled with plants.\nThe air is hot and steamy.\nYou hear the sound of birds",
+        greenhouse.init("huge glass structure filled with plants.\n"
+                                   + "The air is hot and steamy.\n"
+                                   + "You hear the sound of birds",
                 hydroponicsSouth, Dir.NOEXIT, Dir.NOEXIT, Dir.NOEXIT
         );
 
@@ -264,8 +268,7 @@ public class GameData implements java.io.Serializable {
     private static void defineIntroText() {
         introtext = "You find yourself on the bridge of the HMS Starcrash,\n"
                 + "an elite-class starship of Her Majesty's Royal Fleet.\n"
-                + "What do you want to do?\n"
-                + "(Enter q to quit)";
+                + "What do you want to do?\n\n";
     }
 
     public static String introText() {
