@@ -6,7 +6,7 @@ I am using his book [The Little Book of Adventure Game Programming](http://bitwi
 
 The original version of Starcrash is included in the [source code downloads](http://bitwisebooks.com/source-code-downloads/) for this book.
 
-![JavaAdventure_Medium](img\JavaAdventure_Medium.png)
+![JavaAdventure_Medium](img/JavaAdventure_Medium.png)
 
 This personal repository may be used with the restrictions on BIFF as stated below:
 
