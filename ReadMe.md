@@ -4,6 +4,8 @@ Improvements (hopefully) to the [BIFF](http://bitwisebooks.com/program-adventure
 
 I am using his book [The Little Book of Adventure Game Programming](http://bitwisebooks.com/little-book-of-adventure-game-programming-in-java/), to learn Java programming concepts.
 
+Huw has a [YouTube playlist](https://www.youtube.com/playlist?list=PLZHx5heVfgEvT5BD8TgLmGrr-V64pX7MD) in which he goes over some of the basic structures he created in the book.
+
 The original version of Starcrash is included in the [source code downloads](http://bitwisebooks.com/source-code-downloads/) for this book.
 
 ![JavaAdventure_Medium](img/JavaAdventure_Medium.png)
