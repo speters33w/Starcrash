@@ -152,7 +152,7 @@ public class Thing extends BaseThing implements java.io.Serializable {
     }
 
     public void setLongDescription(String long_description) {
-        this.long_description = long_description + "\n";
+        this.long_description = long_description;
     }
 
     private boolean adjectivesMatch(ArrayList<String> someAdjectives) {

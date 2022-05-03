@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<trizbort version="1.7.4.1">
+	<info>
+		<title>Starcrash</title>
+		<author>Huw Collingbourne</author>
+		<description>A map of Starcrash,  from Little Book Of Adventure Game Programming.</description>
+	</info>
+	<map>
+		<room id="1" name="Bridge" subtitle="" x="-192" y="-160" w="96" h="64" region="NoRegion" handDrawn="no" allcornersequal="yes" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="15" cornerTopRight="15" cornerBottomLeft="15" cornerBottomRight="15" borderstyle="Solid" isStartRoom="yes" description="You find yourself on the bridge of the HMS Starcrash,&#xD;&#xA;an elite-class starship of Her Majesty's Royal Fleet.&#xD;&#xA;&#xD;&#xA;This is an ultra-modern starship bridge.&#xD;&#xA;A huge viewscreen dominating one wall shows space in this quadrant.&#xD;&#xA;There is a console on a desk with a slot beneath it." roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSubtitleColor="" roomSmallText="" ZOrder="0">
+			<objects at="n">Viewscreen|Console|</objects>
+		</room>
+		<room id="2" name="Ready Room" subtitle="" x="-320" y="-160" w="96" h="64" region="NoRegion" handDrawn="no" allcornersequal="yes" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="15" cornerTopRight="15" cornerBottomLeft="15" cornerBottomRight="15" borderstyle="Solid" description="Ready Room: This is a small but neat room. &#xD;&#xA;There is a cupboard on the wall" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSubtitleColor="" roomSmallText="" ZOrder="0">
+			<objects at="n">[c]Cupboard|[c]Big wooden box|[c]Small cardboard box|[c]Tiny onyx box|Silver key</objects>
+		</room>
+		<line id="3" name="" description="">
+			<dock index="0" id="1" port="w" />
+			<dock index="1" id="2" port="e" />
+		</line>
+		<room id="4" name="Meeting Room" subtitle="" x="-192" y="-64" w="96" h="64" region="NoRegion" handDrawn="no" allcornersequal="yes" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="15" cornerTopRight="15" cornerBottomLeft="15" cornerBottomRight="15" borderstyle="Solid" description="This is a typical boring-looking meeting room." roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSubtitleColor="" roomSmallText="" ZOrder="0" />
+		<line id="5" name="" description="" startText="up" endText="down">
+			<dock index="0" id="4" port="n" />
+			<dock index="1" id="1" port="s" />
+		</line>
+		<room id="6" name="Corridor" subtitle="" x="-64" y="-64" w="96" h="64" region="NoRegion" handDrawn="no" allcornersequal="yes" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="15" cornerTopRight="15" cornerBottomLeft="15" cornerBottomRight="15" borderstyle="Solid" description="This is a long corridor with doors to the left and right and a stairway leading down." roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSubtitleColor="" roomSmallText="" ZOrder="0" />
+		<room id="7" name="Dining Room" subtitle="" x="64" y="-64" w="96" h="64" region="NoRegion" handDrawn="no" allcornersequal="yes" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="15" cornerTopRight="15" cornerBottomLeft="15" cornerBottomRight="15" borderstyle="Solid" description="This is a room full of tables and chairs." roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSubtitleColor="" roomSmallText="" ZOrder="0" />
+		<room id="8" name="Basement" subtitle="" x="-64" y="32" w="96" h="64" region="NoRegion" handDrawn="no" allcornersequal="yes" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="15" cornerTopRight="15" cornerBottomLeft="15" cornerBottomRight="15" borderstyle="Solid" description="This is a dark room at the bottom of the ship." roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSubtitleColor="" roomSmallText="" ZOrder="0" />
+		<line id="9" name="" description="" startText="down" endText="up">
+			<dock index="0" id="6" port="s" />
+			<dock index="1" id="8" port="n" />
+		</line>
+		<line id="10" name="" description="">
+			<dock index="0" id="4" port="e" />
+			<dock index="1" id="6" port="w" />
+		</line>
+		<line id="11" name="" description="">
+			<dock index="0" id="6" port="e" />
+			<dock index="1" id="7" port="w" />
+		</line>
+		<room id="12" name="Hydroponics North" subtitle="" x="64" y="32" w="96" h="64" region="NoRegion" handDrawn="no" allcornersequal="yes" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="15" cornerTopRight="15" cornerBottomLeft="15" cornerBottomRight="15" borderstyle="Solid" description="This is a steamy hydroponics area with plants everywhere." roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSubtitleColor="" roomSmallText="" ZOrder="0" />
+		<line id="13" name="" description="">
+			<dock index="0" id="8" port="e" />
+			<dock index="1" id="12" port="w" />
+		</line>
+		<room id="14" name="Hydroponics Central" subtitle="" x="64" y="96" w="96" h="64" region="NoRegion" handDrawn="no" allcornersequal="yes" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="15" cornerTopRight="15" cornerBottomLeft="15" cornerBottomRight="15" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSubtitleColor="" roomSmallText="" ZOrder="0" />
+		<room id="15" name="Hydroponics South" subtitle="" x="64" y="160" w="96" h="64" region="NoRegion" handDrawn="no" allcornersequal="yes" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="15" cornerTopRight="15" cornerBottomLeft="15" cornerBottomRight="15" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSubtitleColor="" roomSmallText="" ZOrder="0">
+			<objects at="e">[c]Pitcher Plant|Gold Key|</objects>
+		</room>
+		<room id="16" name="Greenhouse" subtitle="" x="64" y="256" w="96" h="64" region="NoRegion" handDrawn="no" allcornersequal="yes" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="15" cornerTopRight="15" cornerBottomLeft="15" cornerBottomRight="15" borderstyle="Solid" description="" roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSubtitleColor="" roomSmallText="" ZOrder="0">
+			<objects at="w" />
+		</room>
+		<line id="17" name="" description="">
+			<dock index="0" id="16" port="n" />
+			<dock index="1" id="15" port="s" />
+		</line>
+		<line id="18" name="" description="">
+			<dock index="0" id="12" port="ene" />
+			<dock index="1" id="14" port="e" />
+		</line>
+		<room id="19" name="Engine Room" subtitle="" x="-192" y="32" w="96" h="64" region="NoRegion" handDrawn="no" allcornersequal="yes" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="15" cornerTopRight="15" cornerBottomLeft="15" cornerBottomRight="15" borderstyle="Solid" description="This is a big, clanky, oily room full of strange, chugging machinery." roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSubtitleColor="" roomSmallText="" ZOrder="0">
+			<objects at="w" />
+		</room>
+		<line id="20" name="" description="" startText="up" endText="down">
+			<dock index="0" id="19" port="n" />
+			<dock index="1" id="4" port="s" />
+		</line>
+		<line id="21" name="" description="">
+			<dock index="0" id="8" port="w" />
+			<dock index="1" id="19" port="e" />
+		</line>
+		<room id="22" name="Holo Deck" subtitle="" x="64" y="-160" w="96" h="64" region="NoRegion" handDrawn="no" allcornersequal="yes" ellipse="no" roundedCorners="no" octagonal="no" cornerTopLeft="15" cornerTopRight="15" cornerBottomLeft="15" cornerBottomRight="15" borderstyle="Solid" description="This is a big, empty room." roomFill="" secondFill="" secondFillLocation="Bottom" roomBorder="" roomLargeText="" roomSubtitleColor="" roomSmallText="" ZOrder="0" />
+		<line id="23" name="" description="">
+			<dock index="0" id="22" port="s" />
+			<dock index="1" id="7" port="n" />
+		</line>
+		<line id="24" name="" description="">
+			<dock index="0" id="15" port="w" />
+			<dock index="1" id="14" port="w" />
+		</line>
+	</map>
+	<settings>
+		<colors>
+			<canvas>White</canvas>
+			<border>MidnightBlue</border>
+			<line>MidnightBlue</line>
+			<selectedLine>Gold</selectedLine>
+			<hoverLine>DarkOrange</hoverLine>
+			<subTitle>MidnightBlue</subTitle>
+			<smallText>MidnightBlue</smallText>
+			<lineText>MidnightBlue</lineText>
+			<grid>#E7E7E7</grid>
+			<startRoom>GreenYellow</startRoom>
+			<endRoom>Red</endRoom>
+		</colors>
+		<regions>
+			<NoRegion Name="NoRegion" TextColor="Blue">White</NoRegion>
+		</regions>
+		<fonts>
+			<room size="13">Arial</room>
+			<object size="11">Arial</object>
+			<subTitle size="9">Arial</subTitle>
+			<line size="9">Arial</line>
+		</fonts>
+		<grid>
+			<snapTo>yes</snapTo>
+			<visible>yes</visible>
+			<showOrigin>yes</showOrigin>
+			<size>32</size>
+		</grid>
+		<lines>
+			<width>2</width>
+			<arrowSize>12</arrowSize>
+			<textOffset>4</textOffset>
+		</lines>
+		<rooms>
+			<darknessStripeSize>24</darknessStripeSize>
+			<objectListOffset>4</objectListOffset>
+			<connectionStalkLength>32</connectionStalkLength>
+			<preferredDistanceBetweenRooms>64</preferredDistanceBetweenRooms>
+			<defaultRoomName>Cave</defaultRoomName>
+			<defaultRoomShape>0</defaultRoomShape>
+		</rooms>
+		<ui>
+			<handleSize>12</handleSize>
+			<snapToElementSize>16</snapToElementSize>
+		</ui>
+		<margins>
+			<documentSpecific>no</documentSpecific>
+			<horizontal>0</horizontal>
+			<vertical>0</vertical>
+			<wrapDashes>no</wrapDashes>
+		</margins>
+		<keypadNavigation>
+			<creationModifier>control</creationModifier>
+			<unexploredModifier>alt</unexploredModifier>
+		</keypadNavigation>
+	</settings>
+</trizbort>

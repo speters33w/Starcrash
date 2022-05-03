@@ -1,28 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d9c0e7a6-e474-4576-8b18-04c5026c3e13" name="Changes" comment="Added PlantUML files.">
-      <change beforePath="$PROJECT_DIR$/README.html" beforeDir="false" afterPath="$PROJECT_DIR$/README.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReadMe.md" beforeDir="false" afterPath="$PROJECT_DIR$/ReadMe.md" afterDir="false" />
+    <list default="true" id="d9c0e7a6-e474-4576-8b18-04c5026c3e13" name="Changes" comment="Added several vocabulary words">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Starcrash.trizbort" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StarcrashMap.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/JavaAdventure_Medium.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Starcrash.iws" beforeDir="false" afterPath="$PROJECT_DIR$/Starcrash.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/production/Starcrash/game/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/dist/production/Starcrash/game/Game.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/production/Starcrash/game/Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/dist/production/Starcrash/game/Parser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/production/Starcrash/game/Starcrash.class" beforeDir="false" afterPath="$PROJECT_DIR$/dist/production/Starcrash/game/Starcrash.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/production/Starcrash/game/data/GameData.class" beforeDir="false" afterPath="$PROJECT_DIR$/dist/production/Starcrash/game/data/GameData.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/production/Starcrash/game/data/VocabularyData.class" beforeDir="false" afterPath="$PROJECT_DIR$/dist/production/Starcrash/game/data/VocabularyData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/production/Starcrash/game/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/dist/production/Starcrash/game/package.bluej" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/production/Starcrash/gameobjects/ContainerThing.class" beforeDir="false" afterPath="$PROJECT_DIR$/dist/production/Starcrash/gameobjects/ContainerThing.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/production/Starcrash/gameobjects/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/dist/production/Starcrash/gameobjects/Room.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/production/Starcrash/gameobjects/Thing.class" beforeDir="false" afterPath="$PROJECT_DIR$/dist/production/Starcrash/gameobjects/Thing.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/production/Starcrash/game/grammar/NounPhrase.class" beforeDir="false" afterPath="$PROJECT_DIR$/dist/production/Starcrash/game/grammar/NounPhrase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/production/Starcrash/game/grammar/SentenceAnalyzer.class" beforeDir="false" afterPath="$PROJECT_DIR$/dist/production/Starcrash/game/grammar/SentenceAnalyzer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/production/Starcrash/gameobjects/lists/tools/ListTool.class" beforeDir="false" afterPath="$PROJECT_DIR$/dist/production/Starcrash/gameobjects/lists/tools/ListTool.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/production/Starcrash/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/dist/production/Starcrash/package.bluej" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Starcrash.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Starcrash.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/data/GameData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/data/GameData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/data/VocabularyData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/data/VocabularyData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gameobjects/ContainerThing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameobjects/ContainerThing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gameobjects/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameobjects/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/grammar/NounPhrase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/grammar/NounPhrase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/grammar/SentenceAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/grammar/SentenceAnalyzer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gameobjects/Thing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameobjects/Thing.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gameobjects/lists/tools/ListTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameobjects/lists/tools/ListTool.java" afterDir="false" />
     </list>
@@ -98,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651535770084</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added several vocabulary words">
+      <created>1651535939260</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1651535939260</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -116,6 +118,7 @@
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Added BlueJ project files." />
     <MESSAGE value="Added PlantUML files." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added PlantUML files." />
+    <MESSAGE value="Added several vocabulary words" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added several vocabulary words" />
   </component>
 </project>

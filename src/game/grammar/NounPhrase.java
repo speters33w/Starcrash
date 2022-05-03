@@ -30,7 +30,7 @@ public class NounPhrase extends GrammarUnit implements java.io.Serializable {
     public String phrase(){
         String s="";
         for (String a: adjectives){
-            s += a + " ";            
+            s = a + " ";
         }
         s += this.getWord();
         return s;

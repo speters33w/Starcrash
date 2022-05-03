@@ -148,9 +148,9 @@ public class Parser implements java.io.Serializable {
             np = (NounPhrase) gu2;
         }
         if (v == null) {
-            msg = "Can't do this because '" + verb_word + "' is not a command!";
+            msg = "Really? You want to " + verb_word + "? I don't think you can!";
         } else if (np == null) {
-            msg = "Can't do this because '" + noun_word + "' is not an object!";
+            msg = "You can't do this because '" + noun_word + "' isn't something you can " + verb_word;
         } else {
             switch (verb_word) {
                 case "take":
@@ -169,9 +169,6 @@ public class Parser implements java.io.Serializable {
                 case "x":
                 case "examine":
                     msg = Starcrash.game.lookAtOb(np);
-                    break;
-                case "engage":
-                    msg = "OK, Jean-Luc. We'll " + verb_word + ". Really?"; //todo this doesn't work.
                     break;
                 case "lock":
                     msg = game.lockOb(np);
@@ -224,6 +221,9 @@ public class Parser implements java.io.Serializable {
                 case "down":
                     game.goDown();
                     break;
+                case "engage":
+                    msg = "OK, Jean-Luc. We'll engage. Really?";
+                    break;
                 case "examine":
                     msg = word + " what?\n"
                         +"OK, on further examination you find you aren't examining anything.";
@@ -265,7 +265,7 @@ public class Parser implements java.io.Serializable {
         } else if (grammarunits.size() > 4) {
             s = "That command is too long!";
         } else if (analyzer.containsError()) {
-            s = "Cannot understand that command - " + analyzer.getError();
+            s = "How are you supposed to do that without a " + analyzer.getError();
         } else {
             switch (grammarunits.size()) {
                 case 1:

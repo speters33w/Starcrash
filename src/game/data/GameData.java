@@ -101,8 +101,8 @@ public class GameData implements java.io.Serializable {
         // 3) --- Create Game Things (and Generic Things) --- 
         GameThing desk = new GameThing("desk", "metal control desk", Mass.BIG, false, false);
         desk.addAdjectives(new String[]{"metal", "control"});
-        desk.setLongDescription("metal control desk. There is a console built into the desk.\n"
-                              + "There is a small slot beneath the console\n");
+        desk.setLongDescription("metal control desk. There is a console built into the desk."
+                              + "There is a small slot beneath the console");
         desk.setShow(false);
 
         GameThing console = new GameThing("console", "display console", Mass.MEDIUM, false, false);
@@ -190,52 +190,53 @@ public class GameData implements java.io.Serializable {
         //           N,        S,           W,         E,       [Up],      [Down])
         // readyRoom
         readyRoom.init("a small but neat room. \n"
-                                  + "There is a cupboard on the wall\n",
+                                  + "There is a cupboard on the wall",
                 Dir.NOEXIT, Dir.NOEXIT, Dir.NOEXIT, bridge);
         // bridge
-        bridge.init("the bridge of the HMS Starcrash. A huge viewscreen dominates one wall\n",
+        bridge.init("the bridge of the HMS Starcrash. \n" +
+                                 "A huge viewscreen dominates one wall",
                 Dir.NOEXIT, Dir.NOEXIT, readyRoom, Dir.NOEXIT, Dir.NOEXIT, meetingRoom);
         bridge.setLongDescription("an ultra-modern starship bridge.\n" +   
                 "A huge viewscreen dominating one wall shows space in this quadrant.\n"
-                + "There is a console on a desk with a slot beneath it.");
+                + "There is a console on a desk with a slot beneath it");
         // meetingRoom
-        meetingRoom.init("typical boring-looking meeting room",
+        meetingRoom.init("a typical boring-looking meeting room",
                 Dir.NOEXIT, Dir.NOEXIT, Dir.NOEXIT, corridor, bridge, engineRoom
         );
         // engineRoom
-        engineRoom.init("big, clanky, oily room full of strange, chugging machinery",
+        engineRoom.init("a big, clanky, oily room full of strange, chugging machinery",
                 Dir.NOEXIT, Dir.NOEXIT, Dir.NOEXIT, basement, meetingRoom, Dir.NOEXIT
         );
         // corridor
-        corridor.init("long corridor with doors to the left and right and a stairway leading down",
+        corridor.init("a long corridor with doors to the left and right and a stairway leading down",
                 Dir.NOEXIT, Dir.NOEXIT, meetingRoom, diningRoom, Dir.NOEXIT, basement
         );
         // basement
-        basement.init("dark room at the bottom of the ship",
+        basement.init("a dark room at the bottom of the ship",
                 Dir.NOEXIT, Dir.NOEXIT, engineRoom, hydroponicsNorth, corridor, Dir.NOEXIT
         );
         // holoDeck
-        holoDeck.init("big, empty room",
+        holoDeck.init("a big, empty room",
                 Dir.NOEXIT, diningRoom, Dir.NOEXIT, Dir.NOEXIT
         );
         // diningRoom
-        diningRoom.init("room full of tables and chairs",
+        diningRoom.init("a room full of tables and chairs",
                 holoDeck, Dir.NOEXIT, corridor, Dir.NOEXIT
         );
         // hydroponicsNorth
-        hydroponicsNorth.init("steamy hydroponics area with plants everywhere",
+        hydroponicsNorth.init("a steamy hydroponics area with plants everywhere",
                 Dir.NOEXIT, hydroponicsCentral, basement, hydroponicsCentral
         );
         // hydroponicsCentral
-        hydroponicsCentral.init("steamy hydroponics area with plants everywhere",
+        hydroponicsCentral.init("a steamy hydroponics area with plants everywhere",
                 hydroponicsNorth, hydroponicsSouth, hydroponicsSouth, hydroponicsNorth
         );
         // hydroponicsSouth
-        hydroponicsSouth.init("steamy hydroponics area with plants everywhere",
+        hydroponicsSouth.init("a steamy hydroponics area with plants everywhere",
                 hydroponicsCentral, greenhouse, hydroponicsCentral, Dir.NOEXIT
         );
         // greenhouse
-        greenhouse.init("huge glass structure filled with plants.\n"
+        greenhouse.init("a huge glass structure filled with plants.\n"
                                    + "The air is hot and steamy.\n"
                                    + "You hear the sound of birds",
                 hydroponicsSouth, Dir.NOEXIT, Dir.NOEXIT, Dir.NOEXIT
@@ -268,7 +269,7 @@ public class GameData implements java.io.Serializable {
     private static void defineIntroText() {
         introtext = "You find yourself on the bridge of the HMS Starcrash,\n"
                 + "an elite-class starship of Her Majesty's Royal Fleet.\n"
-                + "What do you want to do?\n\n";
+                + "What do you want to do?\n";
     }
 
     public static String introText() {

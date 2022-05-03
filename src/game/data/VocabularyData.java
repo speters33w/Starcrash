@@ -18,11 +18,14 @@ public class VocabularyData implements java.io.Serializable {
     public static void initVocab() {
         //nouns
         vocab.put("bed", WT.NOUN);
+        vocab.put("bird", WT.NOUN);
+        vocab.put("birds", WT.NOUN);
         vocab.put("box", WT.NOUN);
         vocab.put("button", WT.NOUN);
         vocab.put("card", WT.NOUN);
         vocab.put("carvings", WT.NOUN);
         vocab.put("chair", WT.NOUN);
+        vocab.put("chairs", WT.NOUN);
         vocab.put("coin", WT.NOUN);
         vocab.put("computer", WT.NOUN);
         vocab.put("console", WT.NOUN);
@@ -52,6 +55,7 @@ public class VocabularyData implements java.io.Serializable {
         vocab.put("starship", WT.NOUN);
         vocab.put("stars", WT.NOUN);
         vocab.put("table", WT.NOUN);
+        vocab.put("tables", WT.NOUN);
         vocab.put("tree", WT.NOUN);
         vocab.put("viewscreen", WT.NOUN);
         vocab.put("wall", WT.NOUN);
@@ -73,6 +77,7 @@ public class VocabularyData implements java.io.Serializable {
         vocab.put("l", WT.VERB);
         vocab.put("left", WT.VERB);
         vocab.put("lie", WT.VERB);
+        vocab.put("listen", WT.VERB);
         vocab.put("lock", WT.VERB);
         vocab.put("look", WT.VERB);
         vocab.put("open", WT.VERB);
@@ -119,6 +124,7 @@ public class VocabularyData implements java.io.Serializable {
         vocab.put("silver", WT.ADJECTIVE);
         vocab.put("small", WT.ADJECTIVE);
         vocab.put("spiky", WT.ADJECTIVE);
+        vocab.put("steamy", WT.ADJECTIVE);
         vocab.put("tiny", WT.ADJECTIVE);
         vocab.put("wooden", WT.ADJECTIVE);
         //articles
@@ -127,10 +133,11 @@ public class VocabularyData implements java.io.Serializable {
         vocab.put("some", WT.ARTICLE);
         vocab.put("the", WT.ARTICLE);
         //prepositions
+        vocab.put("at", WT.PREPOSITION);
+        vocab.put("beneath", WT.PREPOSITION);
         vocab.put("in", WT.PREPOSITION);
         vocab.put("inside", WT.PREPOSITION);
         vocab.put("into", WT.PREPOSITION);
-        vocab.put("at", WT.PREPOSITION);        
         vocab.put("with", WT.PREPOSITION);        
     }
 }

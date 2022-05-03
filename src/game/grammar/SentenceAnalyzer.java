@@ -64,7 +64,7 @@ public class SentenceAnalyzer implements java.io.Serializable {
         error = "";
         for (GrammarUnit gu : sentence) {
             if (gu instanceof GrammarError) {
-                error += ((GrammarError) gu).getWord() + "! ";
+                error = gu.getWord(); //+= "! "
                 yes = true;
             }
         }
@@ -96,7 +96,7 @@ public class SentenceAnalyzer implements java.io.Serializable {
             noun = getNoun(nextWT);
         }
         if (noun.isEmpty()) {
-            addError("Missing Noun");
+            addError("a noun I can understand.\nMaybe try something different");
         } else {
             sentence.add(new NounPhrase(noun, adjectives));
             rest.remove(nextWT);
