@@ -70,7 +70,7 @@ public class ListTool {
                 s = "You haven't got " + thingDesc;
             } else {
                 s = "Ether there isn't a " + thingDesc
-                        + " here, or the nutter at the rudder didn't imagine you would want to look at this.";
+                        + " here, \nor the nutter at the rudder didn't imagine \nyou would want to look at this.";
             }
         } else if (things.size() > 1) {
             s = "Which of these do you want to " + verb + "?\n";

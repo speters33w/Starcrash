@@ -71,6 +71,7 @@ public class VocabularyData implements java.io.Serializable {
         vocab.put("examine", WT.VERB);
         vocab.put("exits", WT.VERB);
         vocab.put("get", WT.VERB);
+        vocab.put("help", WT.VERB);
         vocab.put("i", WT.VERB);
         vocab.put("inventory", WT.VERB);
         vocab.put("jump", WT.VERB);

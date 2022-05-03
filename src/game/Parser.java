@@ -231,6 +231,9 @@ public class Parser implements java.io.Serializable {
                 case "exits":
                     msg = "How exciting"; //todo program for exits command
                     break;
+                case "help":
+                    globals.Help.instructions();
+                    break;
                 case "l":
                 case "look":
                     game.look();
