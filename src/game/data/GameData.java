@@ -269,7 +269,7 @@ public class GameData implements java.io.Serializable {
     private static void defineIntroText() {
         introtext = "You find yourself on the bridge of the HMS Starcrash,\n"
                 + "an elite-class starship of Her Majesty's Royal Fleet.\n"
-                + "What do you want to do?\n";
+                + "What do you want to do? Typing help might help...\n";
     }
 
     public static String introText() {

@@ -1,0 +1,143 @@
+https://textadventures.co.uk/forum/quest/topic/kcl-4yflleanu45fgubvqg/list-of-basic-built-in-commands
+
+    jump
+    lie
+        ^lie$|^lie down$
+    listen
+    sit
+        ^sit$|^sit down$
+    sleep
+        ^sleep$|^rest$
+    wait
+        ^wait$|^z$ ("Time passes...")
+    xyzzy ("Nothing happens.")
+	zork ("At your service!")
+
+Verbs:
+
+    buy
+        buy
+        purchase
+    climb
+    drink
+    eat
+    hit
+    kill
+    kiss
+    knock
+    lick
+    lie
+        lie on
+        lie upon
+        lie down on
+        lie down upon
+    listen
+    lock
+    move
+    pull
+    push
+    read
+    search
+    show
+    sit
+        sit on
+        sit upon
+        sit down on
+        sit down upon
+    smell
+        smell
+        sniff
+    speak
+    taste
+    throw
+    tie
+    touch
+    turn
+    turnoff
+        turn off
+        turn #object# off
+        switch off
+        switch #object# off
+    turnon
+        turn on
+        turn #object# on
+        switch on
+        switch #object# on
+    unlock
+    untie
+
+
+Built-in commands:
+
+    alttellto
+        ^(?<object>.*), (?<text>.*)$
+    ask
+        ^ask (?<object>.*) about (?<text>.*)$
+    close
+    devmode_commands
+    drop
+    give
+        ^give (?<object1>.*) to (?<object2>.*)$
+    givesingle
+        give
+    go
+        ^go to (?<exit>.*)$|^go (?<exit>.*)$|^(?<exit>north|east|south|west|northeast|northwest|southeast|southwest|in|out|up|down|n|e|s|w|ne|nw|se|sw|o|u|d)$
+    help
+        ^help$|^\?$
+    inventory
+        ^i$|^inv$|^inventory$
+    log_cmd
+        ^log$|^view log$|^display log$
+    look
+        ^look$|^l$
+    lookat
+        look at
+        look
+        x
+        examine
+        exam
+        ex
+    lookdir
+        ^look (?<exit>north|east|south|west|northeast|northwest|southeast|southwest|out|up|down|n|e|s|w|ne|nw|se|sw|o|u|d)$
+
+
+    oops
+        ^oops (?<text>.*)$
+    open
+    put
+        ^(put|insert|place|drop) (?<object1>.*) (on|in|on to|in to|into) (?<object2>.*)$
+    quit
+
+    take
+        take
+        get
+        pick up
+    tell
+        ^tell (?<object>.*) about (?<text>.*)$
+    tellto
+        ^(tell|ask) (?<object>.*) to (?<text>.*)$
+    transcript_off_cmd
+        ^(transcript|script) off$|^disable (script|transcript)$
+    transcript_on_cmd
+        ^(transcript|script)( on|)$|^enable (script|transcript)$
+    undo
+    use
+    useon
+        ^use (?<object1>.*) (on|with) (?<object2>.*)$
+    version_cmd
+        ^(version|info|about)$
+    view_transcript_cmd
+        ^(view|display|show) (the |)(script|transcript)$
+    wear
+        put #object# on
+        wear
+        put on
+        don
+        wear
+
+
+    removefrom
+        ^(remove|take|get|eject) (?<object1>.*) (from|out of|off|out) (?<object2>.*)$
+    restart
+    save
+

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f7590a61-0021-43e2-a0f9-33b11f3a32c4" name="Changes" comment="Added todo list">
+    <list default="true" id="f7590a61-0021-43e2-a0f9-33b11f3a32c4" name="Changes" comment="updated readme with image">
       <change beforePath="$PROJECT_DIR$/Starcrash.iws" beforeDir="false" afterPath="$PROJECT_DIR$/Starcrash.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/data/GameData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/data/GameData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +107,28 @@
       <option name="project" value="LOCAL" />
       <updated>1651602485540</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added image">
+      <created>1651605339178</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1651605339179</updated>
+    </task>
+    <task id="LOCAL-00004" summary="updated readme with image">
+      <created>1651606488419</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1651606488419</updated>
+    </task>
+    <task id="LOCAL-00005" summary="updated readme with image">
+      <created>1651606800309</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1651606800309</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -123,6 +145,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added help command, fixed IntelliJ Configuration" />
     <MESSAGE value="Added todo list" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added todo list" />
+    <MESSAGE value="added image" />
+    <MESSAGE value="updated readme with image" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated readme with image" />
   </component>
 </project>
