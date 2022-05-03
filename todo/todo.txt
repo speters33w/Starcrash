@@ -1,0 +1,25 @@
+Fix that stupid \n. wherever it is...
+
+Add snarky responses to:
+examine starship
+
+Add these verb commands:
+add walk to command
+
+Add these vocabulary words to parser:
+add out to vocabuary
+
+Fix these typos/punctuation problems:
+you haven't got **AN** activation card
+period after objects, such as big wooden box
+Add end phrase to "light speed drive" because of period after quotes.
+
+
+Big projects
+add scoring points and number of turns
+
+Dream projects
+Add mini adventures to holodeck
+*maze of twisty passages all alike from adventure
+*something from Zork
+*topiary of time from t-zero
