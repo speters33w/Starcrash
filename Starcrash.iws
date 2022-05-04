@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f7590a61-0021-43e2-a0f9-33b11f3a32c4" name="Changes" comment="updated BlueJ files,">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Starcrash.iws" beforeDir="false" afterPath="$PROJECT_DIR$/Starcrash.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/data/GameData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/data/GameData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/data/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/data/package.bluej" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/grammar/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/grammar/package.bluej" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gameobjects/lists/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameobjects/lists/package.bluej" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gameobjects/lists/tools/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameobjects/lists/tools/package.bluej" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gameobjects/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameobjects/package.bluej" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gameobjects/special/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameobjects/special/package.bluej" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/globals/Help.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/globals/Help.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/globals/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/src/globals/package.bluej" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/src/package.bluej" afterDir="false" />
-    </list>
+    <list default="true" id="f7590a61-0021-43e2-a0f9-33b11f3a32c4" name="Changes" comment="updated BlueJ files, fixed bug in help" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -153,7 +140,21 @@
       <option name="project" value="LOCAL" />
       <updated>1651617243538</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="updated BlueJ files, fixed bug in help">
+      <created>1651668874005</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1651668874006</updated>
+    </task>
+    <task id="LOCAL-00009" summary="updated BlueJ files, fixed bug in help">
+      <created>1651668929076</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1651668929076</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -173,6 +174,7 @@
     <MESSAGE value="added image" />
     <MESSAGE value="updated readme with image" />
     <MESSAGE value="added list of Quest commands to check against parser" />
-    <option name="LAST_COMMIT_MESSAGE" value="added list of Quest commands to check against parser" />
+    <MESSAGE value="updated BlueJ files, fixed bug in help" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated BlueJ files, fixed bug in help" />
   </component>
 </project>
