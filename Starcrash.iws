@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f7590a61-0021-43e2-a0f9-33b11f3a32c4" name="Changes" comment="updated readme with image">
+    <list default="true" id="f7590a61-0021-43e2-a0f9-33b11f3a32c4" name="Changes" comment="updated BlueJ files,">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Starcrash.iws" beforeDir="false" afterPath="$PROJECT_DIR$/Starcrash.iws" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/data/GameData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/data/GameData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/data/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/data/package.bluej" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/grammar/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/grammar/package.bluej" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gameobjects/lists/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameobjects/lists/package.bluej" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gameobjects/lists/tools/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameobjects/lists/tools/package.bluej" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gameobjects/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameobjects/package.bluej" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gameobjects/special/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameobjects/special/package.bluej" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/globals/Help.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/globals/Help.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/globals/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/src/globals/package.bluej" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/src/package.bluej" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,10 +41,11 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TODO_SCOPE" value="All Places" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.other" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager">
     <configuration name="Starcrash" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -128,7 +139,21 @@
       <option name="project" value="LOCAL" />
       <updated>1651606800309</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added list of Quest commands to check against parser">
+      <created>1651609230690</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1651609230690</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added list of Quest commands to check against parser">
+      <created>1651617243538</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1651617243538</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -147,6 +172,7 @@
     <MESSAGE value="Added todo list" />
     <MESSAGE value="added image" />
     <MESSAGE value="updated readme with image" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated readme with image" />
+    <MESSAGE value="added list of Quest commands to check against parser" />
+    <option name="LAST_COMMIT_MESSAGE" value="added list of Quest commands to check against parser" />
   </component>
 </project>

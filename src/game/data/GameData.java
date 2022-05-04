@@ -36,7 +36,7 @@ public class GameData implements java.io.Serializable {
     // things: 
     // The HashMap of things lets you find a thing (by its key) 
     // when you need to verify its state (open, closed, etc.) Again this
-    // is not needed for the functioning of the game but it's useful
+    // is not needed for the functioning of the game, but it's useful
     // when debugging.
     public static ArrayList<Room> map; // the map - an ArrayList of Rooms    
     public static HashMap<String, Thing> things; // treasures
@@ -47,8 +47,8 @@ public class GameData implements java.io.Serializable {
 
         // To construct a new Game, you should create and initialze objects 
         // in the order show. That's because some objects require other
-        // objects - for example, all Ro9oms must be created before they
-        // are initialized because Rooms refernce other Rooms for their 'exits'
+        // objects - for example, all Rooms must be created before they
+        // are initialized because Rooms reference other Rooms for their 'exits'
         // --- construct a new adventure ---
         // 1) --- Create rooms ---
         Room readyRoom = new Room("Ready Room");

@@ -74,6 +74,6 @@ public class Help {
         System.out.println("*                                                                      *");
         System.out.println("************************************************************************");
         System.out.println("");
-        scanner.close();
+        //scanner.close();
     }
 }
