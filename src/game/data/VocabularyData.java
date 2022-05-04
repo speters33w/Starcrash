@@ -52,6 +52,7 @@ public class VocabularyData implements java.io.Serializable {
         vocab.put("space", WT.NOUN);
         vocab.put("slot", WT.NOUN);
         vocab.put("spikes", WT.NOUN);
+        vocab.put("starcrash", WT.NOUN);
         vocab.put("starship", WT.NOUN);
         vocab.put("stars", WT.NOUN);
         vocab.put("table", WT.NOUN);
@@ -62,7 +63,6 @@ public class VocabularyData implements java.io.Serializable {
         vocab.put("wombat", WT.NOUN);
         //locations
         vocab.put("bridge", WT.NOUN);
-        vocab.put("starcrash", WT.NOUN);
         //verbs
         vocab.put("climb", WT.VERB);
         vocab.put("close", WT.VERB);
@@ -71,6 +71,7 @@ public class VocabularyData implements java.io.Serializable {
         vocab.put("examine", WT.VERB);
         vocab.put("exits", WT.VERB);
         vocab.put("get", WT.VERB);
+        vocab.put("go", WT.ARTICLE); //not an article, but initiated as one to handle "go west," etc.
         vocab.put("help", WT.VERB);
         vocab.put("i", WT.VERB);
         vocab.put("inventory", WT.VERB);
@@ -91,6 +92,7 @@ public class VocabularyData implements java.io.Serializable {
         vocab.put("take", WT.VERB);
         vocab.put("test", WT.VERB);
         vocab.put("unlock", WT.VERB);
+        vocab.put("walk", WT.VERB);
         vocab.put("x", WT.VERB);
         //movement
         vocab.put("north", WT.VERB);
@@ -112,21 +114,25 @@ public class VocabularyData implements java.io.Serializable {
         vocab.put("activation", WT.ADJECTIVE);
         vocab.put("big", WT.ADJECTIVE);
         vocab.put("cardboard", WT.ADJECTIVE);
+        vocab.put("control", WT.ADJECTIVE);
         vocab.put("display", WT.ADJECTIVE);
         vocab.put("faster-than-light", WT.ADJECTIVE);
         vocab.put("huge", WT.ADJECTIVE);
         vocab.put("meeting", WT.ADJECTIVE);
         vocab.put("metal", WT.ADJECTIVE);
         vocab.put("modern", WT.ADJECTIVE);
+        vocab.put("neat", WT.ADJECTIVE);
         vocab.put("onyx", WT.ADJECTIVE);
         vocab.put("pitcher", WT.ADJECTIVE);
         vocab.put("plastic", WT.ADJECTIVE);
         vocab.put("gold", WT.ADJECTIVE);
+        vocab.put("royal", WT.ADJECTIVE);
         vocab.put("silver", WT.ADJECTIVE);
         vocab.put("small", WT.ADJECTIVE);
         vocab.put("spiky", WT.ADJECTIVE);
         vocab.put("steamy", WT.ADJECTIVE);
         vocab.put("tiny", WT.ADJECTIVE);
+        vocab.put("ultra-modern", WT.ADJECTIVE);
         vocab.put("wooden", WT.ADJECTIVE);
         //articles
         vocab.put("a", WT.ARTICLE);
@@ -139,6 +145,7 @@ public class VocabularyData implements java.io.Serializable {
         vocab.put("in", WT.PREPOSITION);
         vocab.put("inside", WT.PREPOSITION);
         vocab.put("into", WT.PREPOSITION);
+        vocab.put("to", WT.PREPOSITION);
         vocab.put("with", WT.PREPOSITION);        
     }
 }

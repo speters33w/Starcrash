@@ -1,4 +1,4 @@
-Fix that stupid \n. wherever it is...
+Fix that stupid \n. wherever it is... (might be done, needs new playthrough)
 
 Add snarky responses to:
 examine starship
@@ -12,14 +12,27 @@ add out to vocabuary
 Fix these typos/punctuation problems:
 you haven't got **AN** activation card
 period after objects, such as big wooden box
-Add end phrase to "light speed drive" because of period after quotes.
+
+minor projects
+go to (bridge from greenhouse if bridge has been visited, etc)
+add handler to parser for words that can be either noun or verb, such as pin, pitch, drive, 
+add handler to parser for words that can be eith noun or adjective, such as metal, control, starship,
 
 
 Big projects
+Implement a way to import vocabulary from csv, format maybe like:
+    word,partOfSpeech,defaultReturn
+	eat,VERB,I wouldn't eat that if I were you!
+	
+	maybe import org.apache.commons.csv and include with code as dependeny, or look here:
+	https://www.javatpoint.com/how-to-read-csv-file-in-java
+	https://www.baeldung.com/java-csv-file-array
+	
+	
 add scoring points and number of turns
 
 Dream projects
 Add mini adventures to holodeck
 *maze of twisty passages all alike from adventure
-*something from Zork
+*something from Zork, maybe entire minizork, need to check license.
 *topiary of time from t-zero

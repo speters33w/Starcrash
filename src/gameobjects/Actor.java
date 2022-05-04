@@ -233,7 +233,7 @@ public class Actor extends ThingHolder implements java.io.Serializable {
     }
 
     public String lookIn(NounPhrase np) {
-        String s = "";
+        String s;
         ThingAndThingHolder t_th;
         Thing t;
         ContainerThing container;
@@ -264,7 +264,7 @@ public class Actor extends ThingHolder implements java.io.Serializable {
     }
 
     public String lookAt(NounPhrase np) {
-        String s = "";
+        String s;
         ThingAndThingHolder t_th;
         Thing t;
         ThingHolder th;

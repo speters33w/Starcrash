@@ -1,7 +1,5 @@
 package globals;
 
-import org.w3c.dom.Text;
-
 import java.util.Scanner;
 
 public class Help {

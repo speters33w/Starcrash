@@ -1,0 +1,38 @@
+examine path:
+
+VocabularyData.initVocab(){
+    vocab.put("examine", WT.VERB);
+	}
+	
+static String processVerbNounPhrase(List<GrammarUnit> command) {
+    switch (verb_word) {
+        case "examine":
+        msg = Starcrash.game.lookAtOb(np); //np is nounphrase
+        break;
+	}	
+}
+	
+String Starcrash.game.lookAtOb(NounPhrase np) {
+        return player.lookAt(np);
+    }	
+	
+public String Actor.lookAt(NounPhrase np) {
+    String s = "";
+	ThingAndThingHolder t_th;
+	Thing t;
+	ThingHolder th;
+	ThingAndThingHolderList things;
+
+    things = matchingThingsHere(np);
+    s = ListTool.oneThingInList(things, np.phrase(), "look at");
+    if (s.isEmpty()) {
+        t_th = things.get(0);
+        t = t_th.getThing();
+        th = t_th.getThingHolder();
+        if (th instanceof ContainerThing) {
+            s = "[The " + t.getDescription() + " is inside " + th.getDescription() + "]\n";
+        }
+        s = t.describe();
+    }
+    return s;
+}	

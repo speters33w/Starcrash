@@ -101,15 +101,15 @@ public class GameData implements java.io.Serializable {
         // 3) --- Create Game Things (and Generic Things) --- 
         GameThing desk = new GameThing("desk", "metal control desk", Mass.BIG, false, false);
         desk.addAdjectives(new String[]{"metal", "control"});
-        desk.setLongDescription("metal control desk. There is a console built into the desk."
+        desk.setLongDescription("metal control desk. \nThere is a console built into the desk. \n"
                               + "There is a small slot beneath the console");
         desk.setShow(false);
 
         GameThing console = new GameThing("console", "display console", Mass.MEDIUM, false, false);
         console.addAdjectives(new String[]{"display"});
-        console.setLongDescription("display console built into the desk.\n"
-                                 + "It is displaying this message:\n"
-                                 + "\"Place activation card into slot to engage faster-than-light drive.\"");
+        console.setLongDescription("display console built into the desk. \n"
+                                 + "\"Place activation card into slot to engage faster-than-light drive.\" \n"
+                                 + "is flashing on the display");
         console.setShow(false);
 
         GameThing goldKey = new GameThing("key", "gold key", Mass.TINY);

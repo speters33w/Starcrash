@@ -27,7 +27,7 @@ public class Parser implements java.io.Serializable {
     // ---- Methods to process commands comprising the specified list
     // ---- of GrammarUnit objects
     static String processVerbNounPhrasePrepositionNounPhrase(List<GrammarUnit> command) {
-        String msg = "";
+        String msg;
         GrammarUnit gu1 = command.get(0);
         GrammarUnit gu2 = command.get(1);
         GrammarUnit gu3 = command.get(2);
@@ -89,7 +89,7 @@ public class Parser implements java.io.Serializable {
     }
 
     static String processVerbPrepositionNounPhrase(List<GrammarUnit> command) {
-        String msg = "";
+        String msg;
         GrammarUnit gu1 = command.get(0);
         GrammarUnit gu2 = command.get(1);
         GrammarUnit gu3 = command.get(2);
@@ -133,7 +133,7 @@ public class Parser implements java.io.Serializable {
     }
 
     static String processVerbNounPhrase(List<GrammarUnit> command) {
-        String msg = "";
+        String msg;
         GrammarUnit gu1 = command.get(0);
         GrammarUnit gu2 = command.get(1);
         String verb_word = gu1.getWord();
@@ -257,7 +257,7 @@ public class Parser implements java.io.Serializable {
     // NOUN or VERB), create a list of GrammarUnit objects and pass that list
     // to be processed by an appropriate method 
     static String processCommand(List<WordAndType> command) {
-        String s = "";
+        String s;
         SentenceAnalyzer analyzer;
         List<GrammarUnit> grammarunits = new ArrayList<>(); // create Grammar Units
 
@@ -316,7 +316,7 @@ public class Parser implements java.io.Serializable {
 
         for (WordAndType wt : command) {
             if (wt.getWordtype() == WT.ERROR) {
-                s += wt.getWord() + " isn't a word any reasonable person would understand.\n";
+                s = wt.getWord() + " isn't a word any reasonable person would understand.\n";
             }
         }
         return s;

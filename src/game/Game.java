@@ -1,4 +1,4 @@
-/*
+/**
  * BIFF (Bitwise Interactive Fiction Framework)
  * Bitwise Books & Courses
  * http://www.bitwisebooks
@@ -153,6 +153,8 @@ public class Game implements java.io.Serializable {
                 s = Parser.runCommand(inputstr);
             }
         }
+        //todo if (lowstr.equals("q") && lowstr.equals("quit")){ [close scanner, close buffered reader] }
+
         return s;
     }
 
