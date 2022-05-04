@@ -1,18 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f7590a61-0021-43e2-a0f9-33b11f3a32c4" name="Changes" comment="Added several vocabulary words.">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/todo/examinepath.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="f7590a61-0021-43e2-a0f9-33b11f3a32c4" name="Changes" comment="Added vocabulary words, tweaks to source">
       <change beforePath="$PROJECT_DIR$/Starcrash.iws" beforeDir="false" afterPath="$PROJECT_DIR$/Starcrash.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/data/GameData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/data/GameData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/data/VocabularyData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/data/VocabularyData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gameobjects/Actor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameobjects/Actor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo/todo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/todo/todo.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/SpaceX_ITT.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651669862847</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added vocabulary words, tweaks to source">
+      <created>1651697538094</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1651697538095</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -195,6 +193,7 @@
     <MESSAGE value="added list of Quest commands to check against parser" />
     <MESSAGE value="updated BlueJ files, fixed bug in help" />
     <MESSAGE value="tweaked help.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="tweaked help.java" />
+    <MESSAGE value="Added vocabulary words, tweaks to source" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added vocabulary words, tweaks to source" />
   </component>
 </project>
