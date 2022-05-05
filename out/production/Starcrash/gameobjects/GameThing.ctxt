@@ -1,8 +1,0 @@
-#BlueJ class context
-comment0.target=GameThing
-comment1.params=aName\ aDescription\ aMass
-comment1.target=GameThing(java.lang.String,\ java.lang.String,\ int)
-comment1.text=\r\n\ This\ is\ a\ very\ simple\ example\ of\ a\ subclass\ of\ the\ Thing\ class.\r\n\ Nothing\ much\ here\ at\ present.\ Even\ so,\ I'm\ keeping\ it\ in\ case\r\n\ I\ may\ want\ to\ add\ special\ data\ or\ behaviour\ that\ is\ not\ shared\r\n\ with\ the\ other\ descendents\ of\ Thing...\r\n\r\n
-comment2.params=aName\ aDescription\ aMass\ canTake\ canMove
-comment2.target=GameThing(java.lang.String,\ java.lang.String,\ int,\ boolean,\ boolean)
-numComments=3
