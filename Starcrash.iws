@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f7590a61-0021-43e2-a0f9-33b11f3a32c4" name="Changes" comment="Added vocabulary words, tweaks to source">
       <change beforePath="$PROJECT_DIR$/Starcrash.iws" beforeDir="false" afterPath="$PROJECT_DIR$/Starcrash.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/SpaceX_ITT.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/globals/Help.ctxt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/globals/Help.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gameobjects/Help.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,11 +26,15 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="28eklmZul7JRineoExw71TlMmHb" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TODO_SCOPE" value="All Places" />
@@ -63,7 +69,7 @@
           <option name="ENABLED" value="true" />
         </pattern>
         <pattern>
-          <option name="PATTERN" value="globals.*" />
+          <option name="PATTERN" value="gameobjects.*" />
           <option name="ENABLED" value="true" />
         </pattern>
         <pattern>
@@ -171,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651697538095</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added vocabulary words, tweaks to source">
+      <created>1651703157205</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1651703157205</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -186,6 +199,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Added help command, fixed IntelliJ Configuration" />
     <MESSAGE value="Added todo list" />
     <MESSAGE value="added image" />

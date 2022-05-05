@@ -1,4 +1,4 @@
-package globals;
+package gameobjects;
 
 import java.util.Scanner;
 

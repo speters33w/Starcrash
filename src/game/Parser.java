@@ -16,6 +16,7 @@ import game.grammar.NounPhrase;
 import game.grammar.Preposition;
 import game.grammar.SentenceAnalyzer;
 import game.grammar.Verb;
+import gameobjects.Help;
 import globals.WT;
 import java.util.ArrayList;
 import java.util.List;
@@ -232,7 +233,7 @@ public class Parser implements java.io.Serializable {
                     msg = "How exciting"; //todo program for exits command
                     break;
                 case "help":
-                    globals.Help.instructions();
+                    Help.instructions();
                     break;
                 case "l":
                 case "look":
